@@ -2,7 +2,7 @@
 layout: post
 title:  "Initial Project Ideas"
 date:   2020-10-17 18:17:46 +0100
-categories: jekyll update
+categories: blog post
 ---
 # Initial Project Ideas
 

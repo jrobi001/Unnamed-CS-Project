@@ -5,8 +5,6 @@ date:   2020-10-28 14:44:42 +0100
 categories: blog post
 ---
 
-# Data Sources
-
 I've been looking into the data sources and APIs that may prove useful in building the pronunciation app, below I'll run through a few of them.
 
 The app is currently planned to have two languages - English and Japanese, so the data resources may refer to one or the other.

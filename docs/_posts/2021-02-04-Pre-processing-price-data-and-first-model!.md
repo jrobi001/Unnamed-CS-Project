@@ -4,8 +4,6 @@ title:  "Pre-processing price data and first model!"
 date:   2021-02-04 17:11:22 +0100
 categories: blog post
 ---
-# Pre-processing price data and first model!
-
 Pre-processing bitcoin price data and training the first model has been successful!
 
 This blog post is a bit different, rather than summarise the result I thought I would test positing a markdown version of the full notebook. 

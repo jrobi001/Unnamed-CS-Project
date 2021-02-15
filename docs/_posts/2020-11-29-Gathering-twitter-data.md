@@ -8,8 +8,6 @@ categories: blog post
 
 ---
 
-# Gathering twitter data
-
 Gathering twitter data could end up being one of the more challenging aspects of the project.
 
 As it is not the focus of the project, it would be good to find a fairly 'hands off' solution that does not eat up too much time better spent elsewhere.

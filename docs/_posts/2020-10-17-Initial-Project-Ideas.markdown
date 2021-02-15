@@ -4,8 +4,6 @@ title:  "Initial Project Ideas"
 date:   2020-10-17 18:17:46 +0100
 categories: blog post
 ---
-# Initial Project Ideas
-
 This blog will follow the development of a final year computer science project. Below are some of the initial ideas for projects I came up with over the summer.
 
 Over the next few weeks one or two of the ideas will be fleshed out into proposals investigating their feasibility, as well as, how interesting or challenging the implementation process will be for them.

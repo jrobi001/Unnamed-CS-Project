@@ -8,8 +8,6 @@ categories: blog post
 
 ---
 
-# Application Front End
-
 Apologies for the length between posts, I had a surgery 4th of December, it slowed me down more than expected.
 
 While this project could be seen primarily as a research investigation I would like to create a dashboard, or front end which displays the history of predictions of the best performing models tested and, if possible, current predictions based on live data.

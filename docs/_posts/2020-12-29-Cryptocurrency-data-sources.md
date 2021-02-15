@@ -9,8 +9,6 @@ categories: blog post
 
 ---
 
-# Cryptocurrency data sources
-
 There are quite a few possible sources of cryptocurrency data, it does not seem like gathering this data will be too difficult a process or take too much time.
 
 There are a few things to consider:

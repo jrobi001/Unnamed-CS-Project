@@ -6,8 +6,6 @@ categories: blog post
 
 ---
 
-# Project Decision
-
 On reflection I have decided to commit to the Cryptocurrency project Idea, it neatly aligns with my modules this year and should allow for some some good exploration of machine learning techniques, hopefully making for a good report.
 
 The other project ideas were good, but may have relied a little too heavily on external APIs. Also as the development period is fairly short, an application may not end up incredibly polished or properly validated with target users.

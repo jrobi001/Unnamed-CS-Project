@@ -10,8 +10,6 @@ categories: blog post
 
 ---
 
-# General progress update
-
 Revision period is underway and unluckily I've had a string of colds and headaches since the surgery last month, but the worst of it seems to be over.
 
 Below I'll run through some of the things I've been up to that don't necessarily warrant their own blog posts.

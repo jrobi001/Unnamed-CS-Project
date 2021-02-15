@@ -6,8 +6,6 @@ categories: blog post
 
 ---
 
-# Tweet collection update
-
 So official collection started on the 1st, but the snscrape/tweepy method has been running since the 31st Jan, giving us 7 days of tweets so far.
 
 I decided to extend the collection of tweets to #eth and #btc and combine them with the tweets gathered for #ethereum and #bitcoin respectively. This means the shared tweet files now contain tweets containing `(#eth OR #ethereum) AND (#btc OR #bitcoin)` or something similar~

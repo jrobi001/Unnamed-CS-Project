@@ -5,8 +5,6 @@ date:   2020-11-13 15:34:23 +0100
 categories: blog post
 ---
 
-# Direction Change
-
 The reading and practice pronunciation application is likely too much work for the development period, especially if implementing 2 languages to demo it to other people. Also the work that would go into scheduling sentences and words may not be immediately obvious to those looking at it.
 
 For this reason I am now deciding between two project ideas:

@@ -10,8 +10,6 @@ categories: blog post
 
 ---
 
-# Data update + general
-
 Just a quick progress update.
 
 #### Tweet data

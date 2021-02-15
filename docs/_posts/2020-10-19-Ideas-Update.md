@@ -5,8 +5,6 @@ date:   2020-10-19 19:25:43 +0100
 categories: blog post
 ---
 
-# Ideas Update
-
 There was a change of plans. Meetings with supervisors have been delayed, so we are to pick a project and start work on the proposal before discussing the initial ideas.
 
 My main proposal will be for the pronunciation focussed language application (as it's probably the project I am most personally invested in), however, I will do research into the feasibility of one of the other ideas just in case.

@@ -11,8 +11,6 @@ categories: blog post
 
 ---
 
-# Tweet collection started + update
-
 Both methods of tweet collection were finalised and officially started on Feb 1st.
 
 So far tweets with #bitcoin or #ethereum are being collected.

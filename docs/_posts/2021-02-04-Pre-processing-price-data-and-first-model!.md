@@ -41,9 +41,9 @@ Data:
 | Volume USDT | 18393856.0883226    |
 | tradecount  | 10423               |
 
-- There is an increase in precision of data and inclusion of `tradecount` from `2020-08-01 23:00:00` on-wards.<img src="img/0-1-change-precision-and-date.png" style="border: 1px solid white;" />
+- There is an increase in precision of data and inclusion of `tradecount` from `2020-08-01 23:00:00` on-wards.<img src="{{site.baseurl}}/img/0-1-change-precision-and-date.png" style="border: 1px solid white;" />
 - There is also a duplication of data between `2020-08-01 23:00:00` and `2020-11-20 07:00:00`, with there being entries for each hour in both the lower precision previous format and the higher precision new format
-  - row 1790 to 7087<img src="img/0-2-end-duplication.png" style="border: 1px solid white;" />
+  - row 1790 to 7087<img src="{{site.baseurl}}/img/0-2-end-duplication.png" style="border: 1px solid white;" />
 
 I can either filter out these duplications somehow, or use the consistent data between `2017-08-17 04-AM ` and `2020-08-01 11-PM`
 
@@ -53,7 +53,7 @@ The change in precision of columns: `open, high, low, close, Volume BTC, Volume 
 
 Below is a chart of the timeperiod from [barchart.com](https://www.barchart.com/crypto/quotes/%5EBTCUSD/interactive-chart)
 
-![](img/0-3-barchart.png)
+![]({{site.baseurl}}/img/0-3-barchart.png)
 
 ### Importing and inspecting the Data
 
@@ -80,7 +80,7 @@ df.shape
 
 `(25936, 10)`
 
-The truncated dataset contains 25936 rows (excluding column title row) and 10 features. Below we print out the first record as an example. The `tradecount` feauture is NaN for all entries, so will be dropped alongside the `unix, date, sumbol` columns as they are not relevant (the samples axis will provide the time information). We will also drop the `Volume USDT` column, as this is the same as `volume BTC` multiplied by the bitcoin price USD, so is probably redundant information.
+The truncated data set contains 25936 rows (excluding column title row) and 10 features. Below we print out the first record as an example. The `tradecount` feature is NaN for all entries, so will be dropped alongside the `unix, date, sumbol` columns as they are not relevant (the samples axis will provide the time information). We will also drop the `Volume USDT` column, as this is the same as `volume BTC` multiplied by the bitcoin price USD, so is probably redundant information.
 
 
 ```python
@@ -121,7 +121,7 @@ plt.show()
 ```
 
 
-![](img/0-4-output_5_0.png)    
+![]({{site.baseurl}}/img/0-4-output_5_0.png)    
 
 
 ### Processing the Data
@@ -222,7 +222,7 @@ df.head()
     </tr>
   </tbody>
 </table>
-Below we seperate the raw data into training validation and test sets. We then individual create samples and targets, by aligning the data according to how far back each batch sample will consider (lookback), how far ahead the predicted target is (delay) and how many steps between individual samples to include in batches (steps).
+Below we separate the raw data into training validation and test sets. We then individual create samples and targets, by aligning the data according to how far back each batch sample will consider (lookback), how far ahead the predicted target is (delay) and how many steps between individual samples to include in batches (steps).
 
 
 ```python
@@ -284,7 +284,7 @@ Volume BTC    1.126612
 Name: 0, dtype: float64`
 
 
-We then use the keras `preprocessing.timeseries_dataset_from_array()` method to create datasets from our individual samples. The samples are collected into small sequences (`lookback` long) with a final target, for feeding into the timeseries model. These sequences are equivalent to individual samples in normal ML tasks. (This method works in a similar way to a generator)
+We then use the keras `preprocessing.timeseries_dataset_from_array()` method to create data-sets from our individual samples. The samples are collected into small sequences (`lookback` long) with a final target, for feeding into the time-series model. These sequences are equivalent to individual samples in normal ML tasks. (This method works in a similar way to a generator)
 
 
 ```python
@@ -315,7 +315,7 @@ test_dataset = tf.keras.preprocessing.timeseries_dataset_from_array(
 
 ### The Model
 
-Before defining the model, we check the shape of the resulting datasets for feeding into our GRU model.
+Before defining the model, we check the shape of the resulting data-sets for feeding into our GRU model.
 
 
 ```python
@@ -415,12 +415,12 @@ def plot_graphs(title):
 plot_graphs("first attempt")
 ```
 
-![](img/0-5-output_20_0.png)
+![]({{site.baseurl}}/img/0-5-output_20_0.png)
 
 
 ### Results
 
-From the plot, there seems to be minimal overfitting, there may be some gains to be made by expanding the network, however those experiments will be done in the following weeks. The results seem ok and it seems our data-processing has worked (though we will double check this as well soon).
+From the plot, there seems to be minimal over-fitting, there may be some gains to be made by expanding the network, however those experiments will be done in the following weeks. The results seem ok and it seems our data-processing has worked (though we will double check this as well soon).
 
 Below we will run this model on the test set then translate the loss from MAE to USD by multiplying with the standard deviation.
 

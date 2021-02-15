@@ -23,7 +23,7 @@ twitter_username: TheGreatCabin
 github_username: jrobi001
 
 # Build settings
-markdown: kramdown
+markdown: GFM
 theme: minima
 plugins:
   - jekyll-feed
